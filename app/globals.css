@@ -15,15 +15,15 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 400;
+  src: local('HelveticaNeueCyr'), url('/fonts/HelveticaNeueCyr-Regular.ttf') format('truetype');
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+  @apply font-helvetica-neue-cyr;
 }
 
 @layer utilities {
